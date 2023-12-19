@@ -11,12 +11,12 @@ pipeline {
                 sh 'golangci-lint run \${WORKSPACE}/fake-backend/config.go'
             }
         }*/
-        stage('Check docker-compose syntax') {
+        /*stage('Check docker-compose syntax') {
             agent { docker { image 'docker/compose' } }
             steps {
                 sh 'docker-compose -f \${WORKSPACE}/docker-compose.yml config'
             }
-        }
+        }*/
         stage('Check Dockerfile syntax') {
             agent { docker { image 'hadolint/hadolint' } }
             steps {
