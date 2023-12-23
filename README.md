@@ -4,7 +4,7 @@
 
 ## Description
 
-* This is a pipeline CI with a GitLab instance to ensure the synatxe is OK
+* This is a pipeline CI to ensure the synatxe is OK
 * It's verified by differents linter (GO, Dockerfile)
 
 
